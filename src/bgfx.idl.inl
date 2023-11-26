@@ -1233,6 +1233,10 @@ BGFX_C_API void bgfx_blit(bgfx_view_id_t _id, bgfx_texture_handle_t _dst, uint8_
 	bgfx::blit((bgfx::ViewId)_id, dst.cpp, _dstMip, _dstX, _dstY, _dstZ, src.cpp, _srcMip, _srcX, _srcY, _srcZ, _width, _height, _depth);
 }
 
+BGFX_C_API int bgfx_vsnprintf(char* _out, size_t _max, const char* _format, va_list _argList)
+{
+	return bx::vsnprintf(_out, _max, _format, _argList);
+}
 
 /* user define functions */
 BGFX_C_API void bgfx_init_ctor(bgfx_init_t* _init)

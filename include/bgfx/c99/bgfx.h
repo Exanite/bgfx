@@ -3424,6 +3424,8 @@ BGFX_C_API void bgfx_discard(uint8_t _flags);
  */
 BGFX_C_API void bgfx_blit(bgfx_view_id_t _id, bgfx_texture_handle_t _dst, uint8_t _dstMip, uint16_t _dstX, uint16_t _dstY, uint16_t _dstZ, bgfx_texture_handle_t _src, uint8_t _srcMip, uint16_t _srcX, uint16_t _srcY, uint16_t _srcZ, uint16_t _width, uint16_t _height, uint16_t _depth);
 
+BGFX_C_API int bgfx_vsnprintf(char* _out, size_t _max, const char* _format, va_list _argList);
+
 /**/
 typedef enum bgfx_function_id
 {
