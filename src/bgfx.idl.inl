@@ -1470,7 +1470,8 @@ BGFX_C_API bgfx_interface_vtbl_t* bgfx_get_interface(uint32_t _version)
 			bgfx_dispatch,
 			bgfx_dispatch_indirect,
 			bgfx_discard,
-			bgfx_blit
+			bgfx_blit,
+			bgfx_vsnprintf
 		};
 
 		return &s_bgfx_interface;
